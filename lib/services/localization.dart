@@ -1,0 +1,117 @@
+class AppLocalization {
+  static const Map<String, Map<String, String>> translations = {
+    'English': {
+      'welcome': 'Welcome',
+      'language_selection': 'Language Selection',
+      'continue_btn': 'Continue',
+      'login_title': 'Login / OTP',
+      'mobile_number': 'Mobile Number',
+      'otp_code': 'OTP Code',
+      'login_btn': 'Login',
+      'dashboard': 'Dashboard',
+      'fisher_profile': 'Fisher Profile',
+      'fishing_trip': 'Fishing Trip',
+      'catch_details': 'Catch Details',
+      'sales_revenue': 'Sales & Revenue',
+      'analysis': 'Analysis',
+      'help_support': 'Help & Support',
+      'profile_details': 'Profile Details',
+      'vessel_reg': 'Vessel Registration',
+      'crew_members': 'Crew Members',
+      'add_new': 'Add New',
+      'save': 'Save',
+      // We will add more keys as needed, falling back to English if missing.
+    },
+    'Tamil': {
+      'welcome': 'வரவேற்கிறோம்',
+      'language_selection': 'மொழி தேர்வு',
+      'continue_btn': 'தொடரவும்',
+      'login_title': 'உள்நுழைக / OTP',
+      'mobile_number': 'மொபைல் எண்',
+      'otp_code': 'OTP குறியீடு',
+      'login_btn': 'உள்நுழைக',
+      'dashboard': 'முகப்பு',
+      'fisher_profile': 'மீனவர் சுயவிவரம்',
+      'fishing_trip': 'மீன்பிடி பயணம்',
+      'catch_details': 'பிடிப்பு விவரங்கள்',
+      'sales_revenue': 'விற்பனை மற்றும் வருவாய்',
+      'analysis': 'பகுப்பாய்வு',
+      'help_support': 'உதவி மற்றும் ஆதரவு',
+      'profile_details': 'சுயவிவர விவரங்கள்',
+      'vessel_reg': 'கப்பல் பதிவு',
+      'crew_members': 'குழு உறுப்பினர்கள்',
+      'add_new': 'புதிய சேர்க்க',
+      'save': 'சேமி',
+    },
+    'Malayalam': {
+      'welcome': 'സ്വാഗതം',
+      'language_selection': 'ഭാഷ തിരഞ്ഞെടുക്കൽ',
+      'continue_btn': 'തുടരുക',
+      'login_title': 'ലോഗിൻ / OTP',
+      'mobile_number': 'മൊബൈൽ നമ്പർ',
+      'otp_code': 'OTP കോഡ്',
+      'login_btn': 'ലോഗിൻ',
+      'dashboard': 'ഡാഷ്‌ബോർഡ്',
+      'fisher_profile': 'മത്സ്യത്തൊഴിലാളി പ്രൊഫൈൽ',
+      'fishing_trip': 'മത്സ്യബന്ധന യാത്ര',
+      'catch_details': 'പിടുത്ത വിവരങ്ങൾ',
+      'sales_revenue': 'വിൽപ്പനയും വരുമാനവും',
+      'analysis': 'വിശകലനം',
+      'help_support': 'സഹായം & പിന്തുണ',
+    },
+    'Hindi': {
+      'welcome': 'स्वागत हे',
+      'language_selection': 'भाषा चयन',
+      'continue_btn': 'जारी रखें',
+      'login_title': 'लॉगिन / OTP',
+      'mobile_number': 'मोबाइल नंबर',
+      'otp_code': 'OTP कोड',
+      'login_btn': 'लॉग इन करें',
+      'dashboard': 'डैशबोर्ड',
+      'fisher_profile': 'मछुआरा प्रोफ़ाइल',
+      'fishing_trip': 'मछली पकड़ने की यात्रा',
+      'catch_details': 'कैच विवरण',
+      'sales_revenue': 'बिक्री और राजस्व',
+      'analysis': 'विश्लेषण',
+      'help_support': 'मदद और समर्थन',
+    },
+    'Bengali': {
+      'welcome': 'স্বাগতম',
+      'language_selection': 'ভাষা নির্বাচন',
+      'continue_btn': 'চালিয়ে যান',
+      'login_title': 'লগইন / OTP',
+    },
+    'Telugu': {
+      'welcome': 'స్వాగతం',
+      'language_selection': 'భాషా ఎంపిక',
+      'continue_btn': 'కొనసాగించు',
+      'login_title': 'లాగిన్ / OTP',
+    },
+    'Odia': {
+      'welcome': 'ସ୍ୱାଗତ',
+      'language_selection': 'ଭାଷା ଚୟନ',
+      'continue_btn': 'ଆଗକୁ ବଢ଼ନ୍ତୁ',
+      'login_title': 'ଲଗଇନ୍ / OTP',
+    },
+    'Kannada': {
+      'welcome': 'ಸ್ವಾಗತ',
+      'language_selection': 'ಭಾಷೆಯ ಆಯ್ಕೆ',
+      'continue_btn': 'ಮುಂದುವರಿಸಿ',
+      'login_title': 'ಲಾಗಿನ್ / OTP',
+    },
+    'Marathi': {
+      'welcome': 'स्वागत आहे',
+      'language_selection': 'भाषा निवड',
+      'continue_btn': 'पुढे जा',
+      'login_title': 'लॉगिन / OTP',
+    },
+  };
+
+  static String translate(String language, String key) {
+    if (translations.containsKey(language) && translations[language]!.containsKey(key)) {
+      return translations[language]![key]!;
+    }
+    // Fallback to English
+    return translations['English']![key] ?? key;
+  }
+}

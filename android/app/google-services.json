@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "7658457393",
+    "project_id": "bobp-9e645",
+    "storage_bucket": "bobp-9e645.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7658457393:android:51c57e19b4a7b36c718810",
+        "android_client_info": {
+          "package_name": "org.bobp.catch_documentation_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUvYD6zDVI7bxeQRvYwhIMvDdVzLlu0l8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
